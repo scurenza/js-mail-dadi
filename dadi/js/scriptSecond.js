@@ -17,6 +17,7 @@ submitBtn.addEventListener('click', function(){
 
     userNum = Math.floor (Math.random() * 6 + 1);
     computerNum = Math.floor (Math.random() * 6 + 1);
+
     
     console.log(userNum, computerNum);
     
@@ -40,5 +41,9 @@ submitBtn.addEventListener('click', function(){
     }
     
     console.log(winner);
-    result.classList.remove('show');
+
+    setTimeout(function(){
+        window.location.reload();
+     }, 1500);
 })
+
