@@ -4,9 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dadi</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <div class="container">
+      <div class="title">
+        <h1>Tenta la fortuna, chi vincerà?</h1>
+      </div>
+
+      <div class="button" id="submit">
+        <button>Tenta la sorte</button>
+      </div>
+
+      <div class="results">
+        <div class="win show">
+          <h3>Vince l'utente <i class="fa-solid fa-user"></i></h3>
+        </div>
+        <div class="loss">
+          <h3>Vince il computer <i class="fa-solid fa-computer"></i></h3>
+        </div>
+        <div class="draw">
+          <h3>Parità</h3>
+        </div>
+      </div>
+    </div>
     <script src="js/scriptSecond.js"></script>
   </body>
 </html>
