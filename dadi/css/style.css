@@ -30,9 +30,6 @@
     padding: 1rem;
 }
 
-.show{
-    display: block;
-}
 
 .results{
     text-align: center;
@@ -42,6 +39,15 @@
 }
 
 .win, .loss, .draw{
+    font-size: 3rem;
+    color: lightgreen;
     display: none;
 }
 
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}

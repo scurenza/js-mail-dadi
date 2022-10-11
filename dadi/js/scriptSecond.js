@@ -9,24 +9,36 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve? */
 let userNum = 0;
 let computerNum = 0;
 let winner = "";
+const submitBtn = document.getElementById('submit');
 
-// Genero i numeri random
-userNum = Math.floor (Math.random() * 6 + 1);
-computerNum = Math.floor (Math.random() * 6 + 1);
 
-console.log(userNum, computerNum);
+// Genero i numeri random al click del bottone
+submitBtn.addEventListener('click', function(){
 
-// Stabilisco il vincitore
-if (computerNum < userNum) {
-    winner = "user";
-}
-
-else if (computerNum > userNum) {
-    winner = "computer";
-}
-
-if (winner === ""){
-    console.log('Parità');
-}
-
-console.log(winner);
+    userNum = Math.floor (Math.random() * 6 + 1);
+    computerNum = Math.floor (Math.random() * 6 + 1);
+    
+    console.log(userNum, computerNum);
+    
+    // Stabilisco il vincitore
+    if (computerNum < userNum) {
+        winner = "user";
+        const result = document.getElementById('win');
+        result.classList.add('show');
+    }
+    
+    else if (computerNum > userNum) {
+        winner = "computer";
+        const result = document.getElementById('loss');
+        result.classList.add('show');
+    }
+    
+    if (winner === ""){
+        console.log('Parità');
+        const result = document.getElementById('draw');
+        result.classList.add('show');
+    }
+    
+    console.log(winner);
+    result.classList.remove('show');
+})
